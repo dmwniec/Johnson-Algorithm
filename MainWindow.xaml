@@ -1,0 +1,32 @@
+﻿<Window x:Class="Dzonson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dzonson"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="437" Width="800">
+    <Grid Margin="0,0,0,2" Cursor="Pen">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF44198F" Offset="0.313"/>
+                <GradientStop Color="#FF366AB4" Offset="1"/>
+                <GradientStop Color="#FF402A97"/>
+                <GradientStop Color="#FF412594" Offset="0.143"/>
+                <GradientStop Color="#FFE20CE2" Offset="0.2"/>
+                <GradientStop Color="#FF30B7BD" Offset="0.75"/>
+                <GradientStop Color="#FF551797" Offset="0.06"/>
+                <GradientStop Color="#FF62169E" Offset="0.643"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <DataGrid x:Name="MainGrid" HorizontalAlignment="Left" Height="275" VerticalAlignment="Top" Width="792" FontSize="48" RenderTransformOrigin="0.5,0.5"/>
+        <Button Content="Wczytaj" HorizontalAlignment="Left" Margin="0,325,0,0" VerticalAlignment="Top" Width="120" Height="35" Background="#FFE02929" FontSize="24" Click="Load"/>
+        <Button Content="Zapisz" HorizontalAlignment="Left" Margin="0,365,0,0" VerticalAlignment="Top" Width="120" Height="35" Background="#FFE02929" FontSize="24" Click="Save"/>
+        <Button Content="Stwórz" HorizontalAlignment="Left" Margin="125,325,0,0" VerticalAlignment="Top" Width="120" Height="35" Background="#FFE02929" FontSize="24" Click="Create" />
+        <Button Content="Generuj" HorizontalAlignment="Left" Margin="125,365,0,0" VerticalAlignment="Top" Width="120" Height="35" Background="#FFE02929" FontSize="24" Click="Generate" />
+        <Button Content="Rozwiąż" HorizontalAlignment="Left" Margin="250,365,0,0" VerticalAlignment="Top" Width="120" Height="35" Background="#FFE02929" FontSize="24" Click="Solute" />
+        <TextBox x:Name="Count_Textbox" HorizontalAlignment="Left" Height="23" Margin="250,330,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="JobsLabel" Content="" HorizontalAlignment="Left" Margin="390,280,0,0" VerticalAlignment="Top" Height="114" Width="392" FontSize="24" RenderTransformOrigin="1,0.5" ForceCursor="True"/>
+
+    </Grid>
+</Window>
